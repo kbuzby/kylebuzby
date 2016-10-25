@@ -1,0 +1,10 @@
+<% if flash[:notice] %>
+  <div>
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+
+<div>
+  <%= render 'form' %>
+  <%= link_to "Add Photos", new_photo_path %>
+</div>
