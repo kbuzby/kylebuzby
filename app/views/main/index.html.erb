@@ -3,7 +3,7 @@
     <br><br><br><br><br><br>
     <h1>Hello, world</h1>
     <p>quick about me section can go here</p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">More About Me &raquo;</a></p>
+    <p><a class="btn btn-primary btn-lg" href="/about" role="button">More About Me &raquo;</a></p>
   </div>
 </div>
 
@@ -15,9 +15,13 @@
           <h2 class="panel-title">Car Projects</h2>
         </div>
         <div class="panel-body">  
-          <h4>Most Recent Title</h4>
-          <p>beginning of most recent post</p>
-          <p><a class="btn btn-default" href="/about" role="button">View more &raquo;</a></p>
+          <%if @carPost!=nil %>
+            <h4><%= @carPost.name %></h4>
+            <p><%= truncate(@carPost.body) %></p>
+            <%= link_to "View more &raquo;".html_safe, posts_path(:category => "Car"), class: "btn btn-default" %>
+          <% else %>
+            <h4>Coming Soon!</h4>
+          <% end %>
         </div>
       </div>
     </div>
@@ -27,9 +31,13 @@
           <h2 class="panel-title">Photo Updates</h2>
         </div>
         <div class="panel-body">
-          <h4>Most Recent Title</h4>
-          <p>beginnning of most recent post</p>
-          <p><a class="btn btn-default" href="#" role="button">View more &raquo;</a></p>
+          <% if @photoPost!=nil %>
+            <h4><%= @photoPost.name %></h4>
+            <p>update this with thumbnail</p>
+            <%= link_to "View more &raquo;".html_safe, posts_path(:category => Photos), class: "btn btn-default" %>
+          <% else %>
+            <h4>Coming Soon!</h4>
+          <% end %>
         </div>
       </div>
     </div>
@@ -39,9 +47,13 @@
           <h2 class="panel-title">Tech Projects</h2>
         </div>
         <div class="panel-body">
-          <h4>Most Recent Title</h4>
-          <p>beginning of most recent posts</p>
-          <p><a class="btn btn-default" href="#" role="button">View more &raquo;</a></p>
+          <% if @techPost != nil %>
+            <h4><%= @techPost.name %></h4>
+            <p><%= truncate(@carPost.body) %></p>
+            <%= link_to "View more &raquo;".html_safe, posts_path(:category => "Tech", class: "btn btn-default" %>
+          <% else %>
+            <h4>Coming Soon!</h4>
+          <% end %>
         </div>
       </div>
     </div>
