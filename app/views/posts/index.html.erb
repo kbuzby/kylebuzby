@@ -1,2 +1,14 @@
-<h1>Posts#index</h1>
-<%= link_to "New Post", new_post_path %>
+<br>
+<div class="container">
+  <% if !@posts.empty? %>
+    <% @posts.each do |post| %>
+      <div class="well">
+        <h3><%= post.name %></h3>
+        <hr>
+        <p><%= post.body %></p>
+      </div>
+    <% end %>
+  <% else %>
+    <h3>Posts Coming Soon!</h3>
+  <% end %>
+</div>

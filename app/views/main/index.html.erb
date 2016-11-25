@@ -1,9 +1,9 @@
 <div class="jumbotron">
   <div class="container">
-    <br><br><br><br><br><br>
-    <h1>Hello, world</h1>
-    <p>quick about me section can go here</p>
-    <p><a class="btn btn-primary btn-lg" href="/about" role="button">More About Me &raquo;</a></p>
+    <br><br><br><br><br><br><br><br>
+    <h1 style="color: #FFFFFF; text-align: right">Hi, I'm Kyle</h1>
+    <p style="color: #FFFFFF; text-align: right"><em>programmer // photographer // jeep lover</em>
+    <a class="btn btn-success btn-lg" href="/about" role="button">More About Me &raquo;</a></p>
   </div>
 </div>
 
@@ -19,7 +19,7 @@
             <% if post!=nil %>
               <h4><%= post.name %></h4>
               <p><%= truncate(post.body) %></p>
-              <%= link_to "View more &raquo;".html_safe, posts_path(:category => category), class: "btn btn-default" %>
+              <%= link_to "View more &raquo;".html_safe, posts_path(:category => category), class: "btn btn-primary" %>
             <% else %>
               <h4>Coming Soon!</h4>
             <% end %>
