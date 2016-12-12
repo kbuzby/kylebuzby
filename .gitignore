@@ -22,3 +22,7 @@
 
 #ignore login pass - eventually to be removed
 /app/assets/config/pass.txt
+
+#ignore public uploads
+/public/uploads/photo
+/public/uploads/tmp
