@@ -1,2 +1,13 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<div class="container">
+  <h1><%= @post.name %></h1>
+  <div class="well">
+    <p><%= raw @post.body %></p>
+    <% if !@photos.empty? %>
+      <div class="well photo-well">
+        <% @photos.each do |photo| %>
+          <%= image_tag photo.path.thumb.url %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

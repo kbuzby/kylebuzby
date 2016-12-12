@@ -5,7 +5,7 @@
       <div class="well">
         <h3><%= post.name %></h3>
         <hr>
-        <p><%= post.body %></p>
+        <p><%= truncate(strip_tags(post.body)) %><%= link_to " Read more", post_path(post.id) %></p>
       </div>
     <% end %>
   <% else %>

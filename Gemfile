@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 #non default
 #carrierwave for file uploading
-gem 'carrierwave' 
+gem 'carrierwave'
+gem 'mini_magick' 
 #bootstrap for css
 gem 'bootstrap-sass'
 
@@ -51,4 +52,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-

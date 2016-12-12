@@ -13,13 +13,16 @@
       <div class="col-md-4">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h2 class="panel-title"><%= category %> Updates</h2>
+            <h2 class="panel-title"><%= category %></h2>
           </div>
           <div class="panel-body">
             <% if post!=nil %>
               <h4><%= post.name %></h4>
-              <p><%= truncate(post.body) %></p>
-              <%= link_to "View more &raquo;".html_safe, posts_path(:category => category), class: "btn btn-primary" %>
+              <% if !post.photos.empty? %>
+                <%= image_tag post.photos.first.path.thumb.url %>
+              <% end %>
+              <p><%= truncate(strip_tags(post.body)) %><%= link_to " Read More", posts_path(post.id)%></p>
+              <%= link_to "View more posts&raquo;".html_safe, posts_path(:category => category), class: "btn btn-primary" %>
             <% else %>
               <h4>Coming Soon!</h4>
             <% end %>

@@ -1,9 +1,11 @@
-<%= form_for @photo, html: {multipart: true} do |f| %>
-  <%=f.label :name %>
-  <%=f.text_field :name %>
-  <%=f.collection_select(:post_id, Post.all, :id, :name, :include_blank => true) %>
-  <%=f.select(:category, ['Car', 'Photos', 'Tech', 'VisualAtlas'])%><br/>
-  <%=f.file_field :path %><br/>
-  <%=f.submit "Save and Return", name: 'save_and_return' %>
-  <%=f.submit "Save and Add More", name: 'save_and_add' %>
-<% end %>
+<div class="container">
+  <%= form_for @photo, html: {multipart: true} do |f| %>
+    <%=f.label :name %>
+    <%=f.text_field :name %>
+    <%=f.collection_select(:post_id, Post.all, :id, :name, :include_blank => true) %>
+    <%=f.select(:category, ['Car', 'Photos', 'Tech', 'VisualAtlas'])%><br/>
+    <%=f.file_field :path %><br/>
+    <%=f.submit "Save and Return", name: 'save_and_return' %>
+    <%=f.submit "Save and Add More", name: 'save_and_add' %>
+  <% end %>
+</div>

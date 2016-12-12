@@ -5,13 +5,13 @@ class MainController < ApplicationController
     photoPost = Post.where(category: "Photos").last
     techPost = Post.where(category: "Tech").last
 
-    @latestPosts = {"Car" => carPost, "Photo" => photoPost, "Tech" => techPost}
+    @latestPosts = {"Car Projects" => carPost, "Photo Posts" => photoPost, "Tech Projects" => techPost}
 
   end
 
   def about
   end
-  
+
   def contact
   end
 
