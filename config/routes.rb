@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   #ActiveRecord resource pages
   resources :posts
   resources :photos, only: [:index, :new, :create, :show, :destroy]
+  resources :users, only: [:new, :create, :edit, :destroy]
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   end
 
   def new
-    if !logged_in?
+    if !admin?
       redirect_to posts_path
     end
 
@@ -17,7 +17,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    if !logged_in?
+    if !admin?
       redirect_to posts_path
     end
 
@@ -28,7 +28,7 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    if !logged_in?
+    if !admin?
       redirect_to post_path(params[:id])
     end
 
@@ -41,7 +41,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    if !logged_in?
+    if !admin?
       redirect_to post_path(params[:id])
     end
 
@@ -55,7 +55,7 @@ class PostsController < ApplicationController
   end
 
   def edit
-    if !logged_in?
+    if !admin?
       redirect_to post_path(params[:id])
     end
 

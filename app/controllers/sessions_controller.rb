@@ -4,13 +4,10 @@ class SessionsController < ApplicationController
   end
 
   def create
-    realPass = File.read("#{Rails.root}/app/assets/config/pass.txt").strip
-    realUser = "kyle"
 
-    user = params[:session][:user]
-    pass = params[:session][:pass]
+    user = User.find_by(email: params[:session][:user].downcase)
 
-    if (user==realUser) && (pass==realPass)
+    if user && user.authenticate(params[:session][:pass])
       log_in user
       redirect_to root_url
     else

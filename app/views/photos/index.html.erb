@@ -1,5 +1,7 @@
 <div class="container">
-  <% @photos.each do |photo| %>
-    <p><%=photo.name%></p>
-  <% end %>
+  <div class="well">
+    <% @photos.each do |photo| %>
+      <%= image_tag photo.path.thumb.url %>
+    <% end %>
+  </div>
 </div>

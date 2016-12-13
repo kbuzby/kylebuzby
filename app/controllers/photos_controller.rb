@@ -4,7 +4,7 @@ class PhotosController < ApplicationController
   end
 
   def new
-    if !logged_in?
+    if !admin?
       redirect_to photos_path
     end
 
@@ -12,7 +12,7 @@ class PhotosController < ApplicationController
   end
 
   def create
-    if !logged_in?
+    if !admin?
       redirect_to photos_path
     end
 
@@ -27,11 +27,12 @@ class PhotosController < ApplicationController
   end
 
   def destroy
-    if !logged_in?
+    if !admin?
       redirect_to photo_path(params[:id])
     end
 
     @photo = Photo.find(params[:id])
+    @photo.delete
   end
 
   def show
