@@ -21,7 +21,7 @@
               <% if !post.photos.empty? %>
                 <%= image_tag post.photos.first.path.thumb.url %>
               <% end %>
-              <p><%= truncate(strip_tags(post.body), :length => 150) %><%= link_to " Read More", posts_path(post.id)%></p>
+              <p><%= truncate(strip_tags(post.body), :length => 135) %><%= link_to " Read More", posts_path(post.id)%></p>
               <%= link_to "View more posts&raquo;".html_safe, posts_path(:category => post.category), class: "btn btn-primary" %>
             <% else %>
               <h4>Coming Soon!</h4>
