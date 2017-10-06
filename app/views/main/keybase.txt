@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/kbuzby
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://kylebuzby.com
+  * I am kbuzby (https://keybase.io/kbuzby) on keybase.
+  * I have a public key with fingerprint CC2A A29D E742 B218 5465  28BA 8487 21F9 5A37 036B
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209cc214b8b53de3e5eb7d66209e84e63181d6692dae4bb77affdc3a0cb4e171020a",
+      "fingerprint": "cc2aa29de742b218546528ba848721f95a37036b",
+      "host": "keybase.io",
+      "key_id": "848721f95a37036b",
+      "kid": "0101ac0d5138e029816a3660df00336baa405425e2842f9cb58c83399191b1b69e3a0a",
+      "uid": "19517323dc9376e97e8a79024d08b819",
+      "username": "kbuzby"
+    },
+    "service": {
+      "hostname": "kylebuzby.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1507298035,
+  "expire_in": 157680000,
+  "prev": "052b8aeb892e0d8cc7381110926295b4456cb396c500088a2743ea982352293f",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.74
+Comment: https://keybase.io/crypto
+
+yMNsAnicbVJtUFRVGAbBEDRgcEaY1kxvfgTt4D333I9z1rCCEVAGGDSl5cPtfpxd
+doC9y+6yBgvTDkgWGjVMqUlj04CZH6VjkUiJYxZpjJM1hAEbSgI2wjCDYBBQ071M
+/Ov8OXPe93me8zzvvN8+HhIUEbz/wLq/8oSQ4uCuq4fLg8y36yd9lKQqFZTJRxWT
+hYuUKMTtsRTbFcpE0YChsSwzgJWQxEGFQMIRSVB4XqsTxBIeAgS0J2YUkbCSJAii
+1arIUKRliSVAADRDi5SRstodNuJyuuwOjyarKYoigxUisIzEAMSxPMcgSUQsEhhg
+xZwIBRrykkYsUt06QzMniW6SaFe1mvawLNj7H/yibxqIMq1wACJCMxgBXoQ8TytW
+moYaUBRZmmMZjjCIZaxYljgkIwgxBhhIQOIx0RLovssX5ADmgAAZqMgYCjzBAkGi
+gGmGVWgkIYB1oJu4HGIp0b1K5ZVSBVVtpLSa1y4Tfax6jsV+RQlZgCTKaqlGdbpU
+jyqrJVqryONxmnSmp8KpQ/cRyfKfiEWyOxRtihrBS1xuu+qgTEBDyh67rgo4WtBy
+0pAzUuRVp91FLHYdwQk8orWjf0O8+mg4RkIikRBmCK0gWRYgAgDQmOEZzEksy/Gy
+BDEvcxoLIZERWEhEjBjIMQyGVkqPVeZQNW1G8ynaNE233eYQPeUuQlV/c7UgNCg4
+IuixpUv09QqKCI9eXDr1etQ/SXDvJrbEkzL68ObhiMAG5F31xYTsrM12n7zfeuvr
+Z76HyXDw9AuPTmX0r1gx9OV3CYHQNfEnHCMpcUnxdf7AoaPxTzdbp9on55/Y3xh1
+Zfke4CNHqN7mYP+mJZ8bvEl9n5HZ8ePoz+Tj7/a6zPkDxmuZt/stcy92VKw+ELmj
+qHXERqWORp+5nLh5Tp3f689lf80/1kV3n2+dCKzKeq5npOnC9NZy03jzwBudDbnj
+Ya+9tfKIe9i/JXTz1PC2m+fXx255ffCd7ru9hvd3Vb65eyfOuJzw8oa13piVYyWp
+Mcty6pY29hl9HW+/VPBk7LQtKzpt4seywvobfa+MJFf98vFHsQl7EObHsllD+ol7
+kdn5cyZz++41F5uy+quW1bqTNvqKcuKzG4YfpncOPDgajQdqYhxtxnOVddUx53JS
+zGfNjvoPt+5qCe/vvXGwUA3AzKmWiLm0yAulQvMPAw7uVndOQ2vVzPWe+eAdNZ+E
+hdyxXHK3P2+Yn2n02j4wrO1rSsVp1jKxbya2rfSpuPBp6qu84qguf2ZqTtLgTmfK
+tqqLQWQ0LnToUq7Ztzy1wA8K766+F66k13SfTds31/Io7lRiZdy6n2bDjvXWBzKm
+3xvqnNxu6ww3/Pzs6dnOTFT2+/Zr9o5P7/ztjHzwR17slYNn7sefTFhvArTf05bJ
+j9X+trEqOQH2/Atf47a0
+=zxci
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kbuzby
+
+==================================================================
