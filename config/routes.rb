@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   match '/home', to: 'main#index', via: [:get, :post]
   match '/about', to: 'main#about', via: [:get, :post]
   match '/contact', to: 'main#contact', via: [:get, :post]
-  match '/keybase.txt', to: 'main#keybase', via: [:get, :post]
 
   #login / logout pages
   get '/login', to: 'sessions#new'
