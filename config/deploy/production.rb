@@ -9,6 +9,8 @@ set :stage, :production
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 server 'www.kylebuzby.com', user: 'ruby-deploy', roles: %w{web app}
 
+#override deploy_to directory in default 
+set :deploy_to, '/home/ruby-deploy/kylebuzby/'
 
 
 # role-based syntax
